@@ -10,6 +10,7 @@ html{
 body{
     background: #080808;
     color: #fff;
+    padding: 80px;
 }
 #header{
  
@@ -41,6 +42,11 @@ nav{
 }
 .logo{
     width: 140px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
 nav ul li{
     display: inline-block;
@@ -76,6 +82,9 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     color:#ff004f;
+}
+nav .fas{
+    display: none;
 }
 
 #about{
@@ -338,6 +347,9 @@ nav .fas{
     #header{
         background-image: url(image/back2.jpeg);
     }
+    nav{
+        padding: 10px 5%;
+    }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -359,6 +371,7 @@ nav .fas{
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+        flex-direction: column;
     }
     nav ul li{
         display: block;
