@@ -14,7 +14,7 @@
         <div class="container">
         <nav>
             <img src="image/VANISHREE 1.png" class="logo">
-            <ul id="sidemenu">
+            <ul id="sidemenu" class="hide-menu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -219,7 +219,17 @@
           sidemenu.style.right="-200px";
         }
       </script>
+<script>
+  function openmenu() {
+      document.getElementById("sidemenu").classList.add("show-menu");
+      document.getElementById("sidemenu").classList.remove("hide-menu");
+  }
 
+  function closemenu() {
+      document.getElementById("sidemenu").classList.add("hide-menu");
+      document.getElementById("sidemenu").classList.remove("show-menu");
+  }
+</script>
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzJQc32mifyKSdr0ztbkn_vbuPePLoWIf6XLkEOlv7zkSMLSo5G2ZP0dY4WI5oPslnSag/exec'
   const form = document.forms['submit-to-google-sheet']
